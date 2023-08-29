@@ -1,0 +1,32 @@
+
+/* Structure */
+h2{
+    background-color:darkmagenta;
+}
+h3{
+    background-color:darkolivegreen;
+}
+body {
+    background-color:darkslategray;
+}
+
+
+/* Tables */
+table {
+    background-color:hotpink;
+    border-collapse: collapse;
+}
+td,th{
+    border: 5px solid red;
+}
+th{
+    background-color:cyan;
+}
+/* Typography */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    color:crimson;
+}
