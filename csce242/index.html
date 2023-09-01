@@ -3,18 +3,24 @@
 
     <head>
         <title>CSCE242 Main Page</title>
-        <h1 style="text-align:center">CSCE242</h1>
-        <p style="text-align:center">In the class we will be learning more about Web Applications and Git.</p>
+        <link rel="stylesheet" href="styles.css">
 
     </head>
 
 <body>
-    <p>Assignments</p>
+    <div class="headercontainer">
+        <h1 id="title" style="text-align:center">CSCE242</h1>
+        <p style="text-align:center">In the class we will be learning more about Web Applications and Git.</p>
+    </div>
 
-    <ol>
-        <li><a href="assignments/assignment1/index.html">Assignment 1</a></li>
-        <li>Assignment 2</li>
-    </ol>
+    <div class="assignmentscontainer">
+        <p id="assignmentsbody"> Assignments</p>
+        <ol>
+            <li><a href="assignments/assignment1/index.html">Assignment 1</a></li>
+            <li><a href="assignments/assignment2/index.html">Assignment 2</a></li>
+        </ol>
+    </div>
+    
 </body>
 
 </html>

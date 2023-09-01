@@ -1,0 +1,34 @@
+
+/* Structure */
+
+body {
+    background-color:hotpink;
+    color:white;
+}
+.headercontainer{
+    background-color:#FFFFFF;
+    color:black;
+}
+
+
+/* Typography */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #8A1934;
+    background-color: transparent;
+    text-decoration: none;
+  }
