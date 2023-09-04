@@ -3,14 +3,19 @@
 
 body {
     background-color:hotpink;
-    color:white;
+    color:black;
 }
 .headercontainer{
     background-color:#FFFFFF;
     color:black;
 }
-
-
+.content {
+    background:#FFFFFF;
+    width:90%;
+    margin: auto;
+    padding: 0 5px;
+    border-radius: 5px;
+} 
 /* Typography */
 
 body {
@@ -18,17 +23,23 @@ body {
 }
 
 a:link {
-    color:white;
+    color:black;
     background-color: transparent;
     text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
 }
 a:visited {
-    color:white;
+    color:black;
     background-color: transparent;
     text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
 }
 a:hover {
-    color: #8A1934;
-    background-color: transparent;
+    color: white;
+    background-color: black;
     text-decoration: none;
+    padding: 2px;
+    border-radius: 4px;
   }
