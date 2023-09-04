@@ -30,3 +30,19 @@ body {
 p {
     color:crimson;
 }
+
+#navigation a:link {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#navigation a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#navigation a:hover {
+    color: #8A1934;
+    background-color: transparent;
+    text-decoration: none;
+  }

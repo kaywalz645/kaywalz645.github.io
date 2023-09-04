@@ -1,0 +1,87 @@
+
+/* Structure */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+ .content {
+    background:#FFFFFF;
+    width:90%;
+    margin: auto;
+    padding: 0 5px;
+    border-radius: 5px;
+} 
+
+/* professors, students, research navigation */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+}
+li {
+    margin-right: 20px;
+}
+
+
+
+/* garden times table */
+table {
+    background-color:#DEFFF2;
+    border-collapse: collapse;
+    padding:10px;
+}
+td,th{
+    border: 3px solid #3B5249 ;
+    padding: 4px;
+}
+.GardenTimesText {
+    display: flex;
+    justify-content: center
+}
+
+
+/* Typography */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(images/greenblurredbackground.jpg);
+}
+.text {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+/* links */
+a:link {
+    color:#3B5249;
+    background-color: #DEFFF2;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+}
+a:visited {
+    color:#3B5249;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+
+}
+a:hover {
+    color: #DEFFF2;
+    background-color: #3B5249;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+
+  /* img */
+  img {
+    border:5px solid #3B5249;
+    border-radius: 5px;
+    padding: 2px;
+  }
