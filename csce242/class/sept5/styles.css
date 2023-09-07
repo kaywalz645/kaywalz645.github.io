@@ -1,0 +1,81 @@
+/* Structure */
+body {
+    background-color: azure;
+}
+
+#main-header {
+    background-color:lightblue;
+}
+
+#main-content {
+    background-color:antiquewhite;
+}
+
+#main-footer {
+    background-color:lightblue;
+}
+
+.padded-area {/* class */
+    padding: 5px;
+    margin:auto;
+}
+
+.info {
+    border: 2px solid white;
+    background: whitesmoke;
+}
+
+.info header {
+    background-color:lightblue;
+    margin: 0 auto;
+}
+
+
+/* Main Navigation */
+
+#main-nav ul {
+    padding-left:0px;
+}
+
+#main-nav li{
+    list-style-type: none;
+    
+}
+
+ #main-nav a{  
+    text-decoration:none;
+    color:black;
+}
+
+
+#main-nav a:hover {
+    border-bottom: 1px solid black;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Larger Resolutions (always at the bottom*/
+
+/* if the width of the screen is more than 600px(not mobile)
+then extend display to in line block for main-nav */
+@media only screen and (min-width: 600px) {
+    #main-nav li {
+        display: inline-block;
+    }
+    .columns {
+        display: flex;
+    }
+    .col1of2 {
+        flex: 1;
+    }
+}

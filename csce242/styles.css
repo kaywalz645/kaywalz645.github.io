@@ -1,21 +1,7 @@
 
 /* Structure */
 
-body {
-    background-color:hotpink;
-    color:black;
-}
-.headercontainer{
-    background-color:#FFFFFF;
-    color:black;
-}
-.content {
-    background:#FFFFFF;
-    width:90%;
-    margin: auto;
-    padding: 0 5px;
-    border-radius: 5px;
-} 
+
 /* Typography */
 
 body {
