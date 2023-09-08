@@ -15,6 +15,8 @@ body {
 
 main h2 {
     text-align: center;
+    background-color:black;
+    color:white;
 }
 
 /* Assignments Flexbox */
@@ -22,10 +24,7 @@ main h2 {
 .assignmentsbody {
     display: flex; 
     flex-direction: column;
-    flex:1
-
 }
-
 .assignmentsbody ul{
     display: flex; 
     flex-direction:column;
@@ -74,7 +73,7 @@ a:hover {
     .assignmentsbody{
         margin-top:5px;
         flex-direction: row;
-        justify-content:space-between;
+        justify-content:center;
         flex-wrap: wrap;
     }
     .assignmentsbody ul {
