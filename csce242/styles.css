@@ -1,6 +1,11 @@
 
 /* Structure */
 
+#nametag  {
+    position:absolute;
+    top:0%;
+    left:5%;
+} 
 
 /* Typography */
 
@@ -8,6 +13,38 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main h2 {
+    text-align: center;
+}
+
+/* Assignments Flexbox */
+
+.assignmentsbody {
+    display: flex; 
+    flex-direction: column;
+    flex:1
+
+}
+
+.assignmentsbody ul{
+    display: flex; 
+    flex-direction:column;
+    text-align: center;
+    list-style-type: none;
+    padding:1px;
+    flex-basis: 100px;
+}
+
+.assignmentsbody li{
+    background-color: lightblue;
+}
+
+.assignmentsbody li p{
+    text-align: left;
+    padding-left:15px;
+}
+
+/* Links */
 a:link {
     color:black;
     background-color: transparent;
@@ -29,3 +66,23 @@ a:hover {
     padding: 2px;
     border-radius: 4px;
   }
+
+
+
+  /* Larger Resolution */
+@media only screen and (min-width:600px) {
+    .assignmentsbody{
+        margin-top:5px;
+        flex-direction: row;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .assignmentsbody ul {
+        padding:10px;
+        flex-basis: 100px;
+        
+    }
+    .assignmentsbody li img {
+        padding:10px;
+    }
+}
