@@ -23,10 +23,13 @@ header {
 #main-header {
     background-color: black;
     color:white;
+    position: fixed;
+    
 }
 #main-header ul {
     list-style-type: none;
     display: flex; 
+
 }
 #main-header li {
     margin:15px;
@@ -38,20 +41,21 @@ header {
 /* navgation  */
 #main-nav {
     background-color:#73000a;
-    justify-content:center;
 }
 #main-nav ul {
     list-style-type: none;
     display: flex; 
-    flex-direction:column;
-    text-align: center;
-    justify-content:center;
-    padding:5px;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color:#73000a;
+    justify-content:space-between;
+    margin-top: 100px;
 }
 #main-nav li {
     padding:10px;
     font-weight: 700;
-    justify-content:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
 #main-nav li:hover{
     background-color: #570008;
@@ -88,15 +92,10 @@ header {
     color:white;
 }
 
-#remarkabler h1 {
+#remarkabler h1,#barriers h1, #understanding h1 {
     margin-bottom:-20px;
 }
-#barriers h1 {
-    margin-bottom:-20px;
-}
-#understanding h1 {
-    margin-bottom:-20px;
-}
+
 .imageandtext ul{
     display:flex;
     flex-direction:column;
@@ -315,13 +314,21 @@ footer {
     #main-header ul{
         justify-content:space-between;
         flex-direction: row;
+        width:100%;
+    }
+    #main-header {
+        width:100%;
     }
     #main-nav ul{
         justify-content:center;
         flex-direction: row;
         margin: 0px 10px;
         flex-wrap: wrap;
-        padding:0px;
+        margin-top: 100px;
+        width:100%;
+    }
+    #main-nav {
+        width:100%;
     }
     #large-space {
         margin:300px;
