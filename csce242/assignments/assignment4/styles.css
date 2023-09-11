@@ -1,0 +1,394 @@
+
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: white;
+    background: url(https://place-hold.it/300x500/666/fff/000.gif);
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    display:flex;
+    flex-direction:column;
+}
+#content {
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+/* header*/
+#main-header {
+    background-color: black;
+    color:white;
+}
+#main-header ul {
+    list-style-type: none;
+    display: flex; 
+}
+#main-header li {
+    margin:15px;
+    font-weight: 700;
+}
+
+
+
+/* navgation  */
+#main-nav {
+    background-color:#73000a;
+    justify-content:center;
+}
+#main-nav ul {
+    list-style-type: none;
+    display: flex; 
+    flex-direction:column;
+    text-align: center;
+    justify-content:center;
+    padding:5px;
+}
+#main-nav li {
+    padding:10px;
+    font-weight: 700;
+    justify-content:center;
+}
+#main-nav li:hover{
+    background-color: #570008;
+}
+
+/* space for background img */
+#large-space {
+    margin:30%;
+}
+
+
+/* content */
+#content-header {
+    display:flex;
+    color:#570008;
+    padding: 10px;
+}
+#content-text1 ul{
+    display:flex;
+    font-weight: 700;
+    list-style-type: none;
+    flex-direction:column;
+}
+
+
+/* first section */
+.three-section{
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+}
+#remarkabler {
+    background-color:#570008;
+    color:white;
+}
+
+#remarkabler h1 {
+    margin-bottom:-20px;
+}
+#barriers h1 {
+    margin-bottom:-20px;
+}
+#understanding h1 {
+    margin-bottom:-20px;
+}
+.imageandtext ul{
+    display:flex;
+    flex-direction:column;
+    list-style-type: none;
+    margin:auto;
+}
+.imageandtext li {
+    justify-content:center;
+    padding:10px;
+}
+
+/* first section second img/text */
+#barriers{
+    background-color: black;
+    color:white;
+}
+
+.special-link:link {
+    border:solid 3px;
+    border-color: white;
+    background-color: #570008;
+    margin:10px;
+}
+.special-link:hover{
+    border:solid 3px;
+    border-color: #570008;
+    background-color:white;
+    color:#570008;
+}
+
+/* first section third img/text */
+
+
+.onlytext img {
+    margin:30px 60px;
+}
+.onlytext h1 {
+    color:#73000a;
+    font-size:250%;
+}
+
+/* research spotlight */
+#research-spotlight {
+    background-color:white;
+}
+#research-spotlight h1 {
+    color:#73000a;
+    text-align: center;
+    font-size:250%;
+    padding-top: 20px;
+    margin-bottom:-20px;
+}
+
+#research-spotlight h3 {
+    color:#73000a;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.researchbody {
+    display: flex; 
+    flex-direction: column;
+}
+.researchbody ul{
+    display: flex; 
+    flex-direction:column;
+    text-align: center;
+    list-style-type: none;
+    padding:1px;
+    flex-basis: 100px;
+}
+
+.researchbody li{
+   background-color: white;
+}
+
+.researchbody li p{
+    text-align: left;
+    padding-left:15px;
+}
+.researchbody img {
+    margin:10px;
+}
+
+
+/* links */
+a:link {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+    padding:5px;
+}
+a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+    padding:5px;
+}
+a:hover {
+    color: white;
+    background-color: #cc2e40;
+    text-decoration: none;
+    padding:5px;
+  }
+
+
+/* three section pt 1 */
+
+#faculty {
+    background-color:#73000a;
+    color:white;
+}
+#faculty h1{
+    color:white;
+    text-align: left;
+    margin:  -10px 0;
+    margin-bottom:-20px;
+}
+#investing{
+    background-color: white;
+}
+#investing h1{
+    text-align: left;
+    margin:  -10px 0;
+    margin-bottom:-20px;
+}
+#health {
+    background-color: #1f414d;
+    color:white;
+}
+#health h1 {
+    color:white;
+    text-align: left;
+    margin:  -10px 0;
+    margin-bottom:-20px;
+}
+
+
+
+/* floating text near bottom */
+#float {
+    display:flex;
+    flex-direction:column;
+    color:white;
+    list-style-type: none;
+    margin:auto;
+}
+#float h1 {
+    color:white;
+    text-align:left;
+    margin-bottom:-10px;
+}
+#float ul {
+    background-color:#73000a;
+    list-style-type: none;
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    margin:15px;
+    padding-bottom:30px;
+}
+
+#vp-research h1 {
+    text-align: left;
+    margin-bottom:-20px;
+}
+
+/* footer */
+footer img {
+    align-items: center;
+}
+footer {
+    margin-top: 20px;
+    background-color:#73000a;
+    color:white;
+}
+.cands {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.cands ul {
+    list-style-type: none;
+    justify-content:space-between;
+}
+.cands li {
+    padding: 6px;
+    font-size:smaller;
+}
+
+#section1{
+    width:50%;
+}
+
+#section2{
+    width:30%;
+}
+
+#section3{
+    width:15%;
+}
+#blackbar {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    background-color: black;
+}
+
+
+
+
+
+
+  /* Larger Resolution */
+  @media only screen and (min-width:800px) {
+    #main-header ul{
+        justify-content:space-between;
+        flex-direction: row;
+    }
+    #main-nav ul{
+        justify-content:center;
+        flex-direction: row;
+        margin: 0px 10px;
+        flex-wrap: wrap;
+        padding:0px;
+    }
+    #large-space {
+        margin:300px;
+    }
+    #content-header {
+        display:flex;
+        justify-content:center;
+        padding-right: 30%;
+    }
+    #content-header h1 {
+        color:white;
+        background-color: #570008;
+        padding:10px;
+    }
+    #content-text1 {
+        display:flex;
+        justify-content:center;
+        font-weight: 700;
+        margin:-20px;
+    }
+    #content-text1 li{
+        width:40em;
+    }
+
+    .three-section{
+        display:flex;
+        flex-direction:column;
+        background-color: white;
+    }
+    .imageandtext {
+        display:flex;
+        font-size:large;
+    }
+    .imageandtext img {
+        width:30%;
+    }
+    .imageandtext ul{
+        display:flex;
+        flex-direction:column;
+        list-style-type: none;
+    }
+    .imageandtext li {
+        justify-content: center;
+        padding:10px;
+        width:80%;
+    }
+
+    .researchbody{
+        margin-top:5px;
+        flex-direction: row;
+        justify-content:center;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    .researchbody ul {
+        padding:10px;
+        flex-basis: 200px;
+        
+    }
+    .researchbody li img {
+        padding:10px;
+    }
+    
+    #float ul{
+    width:60%;
+    margin:30% 70% 15% 10%;
+    padding-bottom:30px;
+    padding-right: 30px;
+    }
+}
