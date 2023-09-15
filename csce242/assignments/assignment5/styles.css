@@ -1,0 +1,133 @@
+
+/* Structure */
+
+.hide {
+    display: none;
+}
+/* Typography */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* heart animation */
+
+#heart{
+    align-content: end;
+    position:relative;
+    
+}
+.heart-animate {
+    animation-name:anim-square;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes anim-square {
+    0% {
+        opacity:1;
+        top:0px;
+        transform:rotate(0)
+    }
+    25%{
+        top:100px;
+        left:50px;
+        transform:rotate(90deg)
+    }
+    50%{
+        top:200px;
+        left:0px;
+        transform:rotate(180deg)
+    }
+    75%{
+        
+        top:100px;
+        right:50px;
+        transform:rotate(270deg)
+    }
+    100%{
+        top:0px;
+        opacity:1;
+        transform:rotate(360deg)
+
+    }
+}
+/* Header */
+header h1 {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+/* Flex Container */
+.container{
+    display:flex;
+    background-color:blue;
+    flex-direction:column;
+}
+.container ul{
+    display: flex; 
+    background-color:lightblue;
+    flex-direction:column;
+    list-style-type: none;
+    flex-basis: 30%;
+    margin:5px;
+    text-align: center;
+    padding:1px;
+}
+.container li h2{
+    text-align: center;
+}
+#animation-box{
+    padding-bottom: 200px;
+}
+/* text container */
+.text {
+    padding:5px;
+    text-align: left;
+}
+.text-flex{
+    display:flex;
+    flex-direction: row;
+    margin-bottom:5px;
+}
+.text-flex ul{
+    display:flex;
+    flex-direction: column;
+}
+.text-flex li{
+    display:flex;
+    padding: 5px;
+}
+.comment{
+    background-color: white;
+    color:black;
+    border:2px solid black;
+    margin-bottom:5px;
+    flex-direction: column;
+}
+.comment p {
+    margin:5px 0;
+    text-align: left;
+    padding-left:15px;
+}
+
+#button-comment{
+    margin-bottom:5px;
+}
+
+/* Larger Resolution */
+@media only screen and (min-width:600px) {
+    .container{
+        margin-top:5px;
+        flex-direction: row;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+    }
+    .container ul {
+        padding:10px;
+        flex-basis: 30%;
+    }
+
+}
