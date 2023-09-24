@@ -18,6 +18,10 @@ body {
     list-style-type: none;
 }
 
+.hide{
+    display:none !important;
+}
+
 /* Header */
 header{
     text-align: center;
@@ -27,16 +31,21 @@ header{
 
 /* Header Button Flex Box */
 #if-statement{
-    flex-direction:row;
+    flex-direction:column;
     background-color:white;
     color:#f26363;
     padding-top:10px;
     width:100%;
     padding-left:1px;
+    justify-content: space-evenly;
     
 }
 .border{
     border-bottom:solid 5px #f26363;
+}
+#if-statement li{
+    justify-content: center;
+    text-align: center;
 }
 
 /* whos the oldest flexbox */
@@ -76,6 +85,33 @@ main {
     width:30%;
     padding-left: 5px;
 }
+/* Fund Raising flexbox */
+#funds {
+    background-color: #f26363;
+    padding: 20px;
+    text-align: center;
+}
+#funds-raised-container{
+    flex-direction: row;
+    padding:1px;
+}
+#funds-raised-container li{
+    padding:5px;
+}
+#thermometer{
+    width:100px;
+    border:solid black 2px;
+    margin:auto;
+    background: linear-gradient(0deg, red 25%,yellow 50%,green 75%, blue 100%);
+    bottom:0;
+   
+}
+.thermo-box{
+    height:450px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* Larger Resolutions */
 @media only screen and (min-width:600px) {
@@ -88,8 +124,4 @@ main {
         width:400px;
         justify-content: center;
     }
-}
-
-.hide{
-    display:none !important;
 }
