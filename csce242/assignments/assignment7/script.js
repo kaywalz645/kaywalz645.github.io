@@ -108,12 +108,12 @@ const calculateAge = () => {
   ageContainer.innerHTML = `<p>Oldest to Youngest:${oldestName}, ${middleName}, ${youngestName}</p>`;
 };
 
-const donationThermometer = () =>{
+const donationThermometer = () => {
   const thermometer = document.getElementById("thermometer");
   const donation = parseInt(document.getElementById("donation-number").value);
   const donationgoal = 10000;
   const thermobar = (donation / donationgoal) * 100;
-    console.log(thermobar);
+  console.log(thermobar);
   if (thermobar < 25) {
     thermometer.style.height = "0px";
   } else if ((thermobar >= 25) & (thermobar < 50)) {

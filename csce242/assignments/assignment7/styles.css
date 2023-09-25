@@ -1,127 +1,121 @@
-
 /* Structure */
 body {
-    font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    display: flex; 
-    flex-direction:column;
-    list-style-type: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
-.container li{
-    margin-top:10px;
-    padding-bottom:5px;
+.container li {
+  margin-top: 10px;
+  padding-bottom: 5px;
 }
 .container ul {
-    display:flex;
-    flex-direction:column;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
 
-.hide{
-    display:none !important;
+.hide {
+  display: none !important;
 }
 
 /* Header */
-header{
-    text-align: center;
-    background-color:#f26363;
-    padding-top:5px;
+header {
+  text-align: center;
+  background-color: #f26363;
+  padding-top: 5px;
 }
 
 /* Header Button Flex Box */
-#if-statement{
-    flex-direction:column;
-    background-color:white;
-    color:#f26363;
-    padding-top:10px;
-    width:100%;
-    padding-left:1px;
-    justify-content: space-evenly;
-    
+#if-statement {
+  flex-direction: column;
+  background-color: white;
+  color: #f26363;
+  padding-top: 10px;
+  width: 100%;
+  padding-left: 1px;
+  justify-content: space-evenly;
 }
-.border{
-    border-bottom:solid 5px #f26363;
+.border {
+  border-bottom: solid 5px #f26363;
 }
-#if-statement li{
-    justify-content: center;
-    text-align: center;
+#if-statement li {
+  justify-content: center;
+  text-align: center;
 }
 
 /* whos the oldest flexbox */
 #oldest {
-    display:flex;
-    justify-content: center;
-    background-color:#f26363;
-    padding:15px;
-    
+  display: flex;
+  justify-content: center;
+  background-color: #f26363;
+  padding: 15px;
 }
 main {
-    display:flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.container-row{
-    display: flex; 
-    flex-direction:row;
-    list-style-type: none;
-    justify-content: center;
+.container-row {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
 }
 .container-row ul {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #oldest h2 {
-    text-align:center;
+  text-align: center;
 }
-#input-name li{
-    margin:0;
-    width:61px;
+#input-name li {
+  margin: 0;
+  width: 61px;
 }
-#input li{
-    margin:14px 40px 15px 0px;
-    
+#input li {
+  margin: 14px 40px 15px 0px;
 }
-#calculate-age{
-    width:30%;
-    padding-left: 5px;
+#calculate-age {
+  width: 30%;
+  padding-left: 5px;
 }
 /* Fund Raising flexbox */
 #funds {
-    background-color: #f26363;
-    padding: 20px;
-    text-align: center;
+  background-color: #f26363;
+  padding: 20px;
+  text-align: center;
 }
-#funds-raised-container{
-    flex-direction: row;
-    padding:1px;
+#funds-raised-container {
+  flex-direction: row;
+  padding: 1px;
 }
-#funds-raised-container li{
-    padding:5px;
+#funds-raised-container li {
+  padding: 5px;
 }
-#thermometer{
-    width:100px;
-    border:solid black 2px;
-    margin:auto;
-    background: linear-gradient(0deg, red 25%,yellow 50%,green 75%, blue 100%);
-    bottom:0;
-   
+#thermometer {
+  width: 100px;
+  border: solid black 2px;
+  margin: auto;
+  background: linear-gradient(0deg, red 25%, yellow 50%, green 75%, blue 100%);
+  bottom: 0;
 }
-.thermo-box{
-    height:450px;
-    display: flex;
+.thermo-box {
+  height: 450px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 /* Larger Resolutions */
-@media only screen and (min-width:600px) {
-    #if-statement{
-        flex-direction:row;
-        
-    }
-    #oldest {
-        display:flex;
-        width:400px;
-        justify-content: center;
-    }
+@media only screen and (min-width: 600px) {
+  #if-statement {
+    flex-direction: row;
+  }
+  #oldest {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+  }
 }
