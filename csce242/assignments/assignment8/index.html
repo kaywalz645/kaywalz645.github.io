@@ -14,11 +14,19 @@
     <main>
         <div class="flex">
             <ul>
-                <li><h2>Running Man</h2></li>
+                <li class = "text"><h2>Running Man</h2></li>
+                <img id="running-man" src="photos/runningman.png">
             </ul>
             <ul>
-                <li><h2>Fund Raising</h2></li>
-                <li><p class="text-left">Goal:10,000.00</p></li>
+                <li class = "text"><h2>Fund Raising</h2></li>
+                <li class = "text"><p class="text-left">Goal:10,000.00</p></li>
+                <ul class="container" id="funds-raised-container">
+                    <li class = "text">Funds Raised</li>
+                    <li class = "text"><input type="text" id="donation-number" /></li>
+                    <li class = "text"><button id="thermometer-button">Display</button></li>
+                </ul>
+                <div id="thermometer"></div>
+                <div id="background-box"></div>
             </ul>
         </div>
     </main>

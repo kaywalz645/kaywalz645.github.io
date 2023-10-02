@@ -18,10 +18,37 @@ body {
     padding:5px;
     width:40%
 }
-.flex li{
+.text{
     text-align: center;
 }
 
 .text-left{
     text-align:left;
+}
+
+/* Funds Raised  */
+#funds-raised-container {
+    display:flex;
+    flex-direction: row;
+    padding: 1px;
+  }
+  #funds-raised-container li {
+    padding: 5px;
+  }
+
+
+#thermometer{
+    --x:500px;
+    background-color: white;
+    height:var(--x);
+    width:100px;
+    margin-left:110px;
+    background: linear-gradient(0deg, red 25%, yellow 50%, green 75%, blue 100%);
+}
+
+
+#running-man{
+    --r:0px;
+    margin-left:var(--r);
+    text-align: none;
 }
