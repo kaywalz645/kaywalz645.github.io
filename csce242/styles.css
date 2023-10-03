@@ -7,6 +7,9 @@
     left:5%;
 } 
 
+#title{
+    text-align: center;
+}
 /* Typography */
 
 body {
@@ -19,13 +22,14 @@ main h2 {
     color:white;
 }
 
+
 /* Assignments Flexbox */
 
-.assignmentsbody {
+.flexbody {
     display: flex; 
     flex-direction: column;
 }
-.assignmentsbody ul{
+.flexbody ul{
     display: flex; 
     flex-direction:column;
     text-align: center;
@@ -34,11 +38,11 @@ main h2 {
     flex-basis: 100px;
 }
 
-.assignmentsbody li{
+.flexbody li{
     background-color: lightblue;
 }
 
-.assignmentsbody li p{
+.flexbody li p{
     text-align: left;
     padding-left:15px;
 }
@@ -70,18 +74,18 @@ a:hover {
 
   /* Larger Resolution */
 @media only screen and (min-width:600px) {
-    .assignmentsbody{
+    .flexbody{
         margin-top:5px;
         flex-direction: row;
         justify-content:center;
         flex-wrap: wrap;
     }
-    .assignmentsbody ul {
+    .flexbody ul {
         padding:10px;
         flex-basis: 100px;
         
     }
-    .assignmentsbody li img {
+    .flexbody li img {
         padding:10px;
     }
 }
