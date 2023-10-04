@@ -1,0 +1,49 @@
+/* Structure */
+
+
+
+/* Text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+/* Main Header */
+header{
+    background-color:white;
+    border:solid lightgray 1px;
+}
+#main-header{
+    display:flex;
+}
+#main-header-logo{
+    position:absolute;
+    top: 25px;
+    left: 25px;
+}
+#main-header ul{
+    list-style-type: none;
+    display:flex;
+    margin-left:50px;
+}
+#main-header li{
+    padding:10px;
+}
+#company-info{
+
+}
+#discover-buttons{
+    justify-content: end;
+}
+
+/* Main */
+
+
+
+/* Footer */
+
+
+
+
+/* Wider Resolution */
+
