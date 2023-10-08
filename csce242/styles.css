@@ -1,91 +1,91 @@
-
 /* Structure */
 
-#nametag  {
-    position:absolute;
-    top:0%;
-    left:5%;
-} 
+#nametag {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
 
-#title{
-    text-align: center;
+#title {
+  text-align: center;
 }
 /* Typography */
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main h2 {
-    text-align: center;
-    background-color:black;
-    color:white;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
-
 
 /* Assignments Flexbox */
-
-.flexbody {
-    display: flex; 
-    flex-direction: column;
+.assignmentsbody {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
-.flexbody ul{
-    display: flex; 
-    flex-direction:column;
-    text-align: center;
-    list-style-type: none;
-    padding:1px;
-    flex-basis: 100px;
+.assignmentsbody ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+  padding: 1px;
+  flex-basis: 100px;
+  height:320px;
+  background-color: lightblue;
+  margin:10px;
+  
 }
 
-.flexbody li{
-    background-color: lightblue;
+.assignmentsbody li {
+  
+  list-style-type: none;
 }
 
-.flexbody li p{
-    text-align: left;
-    padding-left:15px;
+.assignmentsbody li p {
+  text-align: left;
+  padding-left: 15px;
 }
 
 /* Links */
 a:link {
-    color:black;
-    background-color: transparent;
-    text-decoration: none;
-    padding: 6px;
-    border-radius: 4px;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
 }
 a:visited {
-    color:black;
-    background-color: transparent;
-    text-decoration: none;
-    padding: 6px;
-    border-radius: 4px;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
 }
 a:hover {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    padding: 2px;
-    border-radius: 4px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+/* Larger Resolution */
+@media only screen and (min-width: 600px) {
+  .assignmentsbody {
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-
-
-
-  /* Larger Resolution */
-@media only screen and (min-width:600px) {
-    .flexbody{
-        margin-top:5px;
-        flex-direction: row;
-        justify-content:center;
-        flex-wrap: wrap;
-    }
-    .flexbody ul {
-        padding:10px;
-        flex-basis: 100px;
-        
-    }
-    .flexbody li img {
-        padding:10px;
-    }
+  .assignmentsbody ul {
+    padding: 10px;
+    flex-basis: 100px;
+  }
+  .assignmentsbody li img {
+    padding: 10px;
+  }
 }
