@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 
-<html lang = "en">
-
-<!-- Kaylee Walz CSCE242-->
-<head>
+<html lang="en">
+  <!-- Kaylee Walz CSCE242-->
+  <head>
     <title>CSCE242 Assignment 2 Kaylee Walz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <main>
-
-
+      <div class="flex">
+        <ul class="inner-flex">
+          <li><h2>Quotes</h2></li>
+          <li><p id="quotes-list"></p></li>
+          <li></li>
+        </ul>
+        <ul class="inner-flex">
+          <li><h2>Rainbow</h2></li>
+          <li><button id="rainbow-button">Draw Rainbow</button></li>
+          <li>
+            <div id="rainbow">
+              <img id="gold" class="hide" src="images/potOfGold.png">
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
-</body>
+  </body>
+</html>
