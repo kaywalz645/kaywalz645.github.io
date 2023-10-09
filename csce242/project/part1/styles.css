@@ -1,0 +1,205 @@
+/* Structure */
+header {
+  background-color: white;
+  border: solid lightgray 1px;
+}
+.hide {
+  display: none;
+}
+
+/* Text */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links */
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+a:hover {
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* Main Header Format*/
+#main-header ul {
+  list-style-type: none;
+  display: flex;
+  padding: 3px;
+}
+#main-header li {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Smaller Resolution Menu */
+#menu {
+  margin-top: 60px;
+  /* background-color: gray; */
+}
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+/* Header Images/Menu Image */
+#toggle-menu {
+  position: absolute;
+  right: 20px;
+}
+#header-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#wider-logo {
+  display: none;
+}
+
+/* Main */
+/* Main-Content Basic Flex Container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container ul {
+  list-style-type: none;
+}
+/* Mainpage Title/Image */
+#mainpage-title {
+  margin-top: 150px;
+  width: 370px;
+  margin-left: 8%;
+}
+#mainpage-flex1 {
+  justify-content: space-between;
+}
+#mainpage-img1 {
+  margin-right: 8%;
+}
+
+/* What We Do Section */
+#whatwedo {
+  flex-direction: column;
+  background-color: lightgray;
+}
+#whatwedo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1;
+  align-items: center;
+  padding: 20px 0;
+}
+#whatwedo-p {
+  text-align: left;
+  max-width: 800px;
+  padding: 5px;
+}
+#whatwedo-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1px;
+}
+#whatwedo-photos li {
+  margin: 0 5%;
+}
+
+/* Who We Are Section */
+#whoweare {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#whoweare ul {
+  text-align: center;
+  justify-content: center;
+  padding: 1px;
+}
+#whoweare-title {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Plan Your Event Section */
+#planyourevent {
+  background-color: lightgray;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#planyourevent-text {
+  max-width: 500px;
+}
+/* Join Our Team Section */
+#joinourteam {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#joinourteam-text {
+  max-width: 500px;
+}
+
+/* Footer */
+#footer-menu {
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    margin-top:10px;
+}
+#footer-menu ul {
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  padding: 3px;
+  flex-direction: row;
+}
+#footer-menu li {
+  padding-bottom: 5px;
+  text-align: center;
+  padding:5px;
+}
+
+/* Wider Resolution */
+@media only screen and (min-width: 791px) {
+  /* Larger Menu Format */
+  #menu {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  #menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #menu li {
+    padding: 7px;
+  }
+  #wider-logo {
+    display: flex;
+  }
+  #main-header-logo {
+    display: none;
+  }
+  a:link {
+    border: solid gray 1px;
+  }
+}

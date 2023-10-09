@@ -1,9 +1,7 @@
 /* Structure */
 .hide {
-    display:none;
+  display: none;
 }
-
-
 
 /* Text */
 body {
@@ -14,7 +12,7 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  position:relative;
+  position: relative;
 }
 .inner-flex {
   flex-direction: column;
@@ -23,7 +21,7 @@ body {
   width: 45%;
   padding: 10px;
   margin: 10px;
-  position:relative;
+  position: relative;
 }
 /* Rainbow */
 #rainbow-button {
@@ -32,12 +30,12 @@ body {
 .rows {
   width: 90%;
   height: 10px;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-#gold{
-position: absolute;
-left:80%;
+#gold {
+  position: absolute;
+  left: 80%;
 }
 
 /* Larger Resolution */

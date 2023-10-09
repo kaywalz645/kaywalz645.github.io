@@ -44,8 +44,7 @@ const rainbowBuilder = () => {
       rainbow.appendChild(p);
       rCount++;
     } else if ((rCount = colors.length)) {
-        
-        document.getElementById("gold").classList.remove("hide");
+      document.getElementById("gold").classList.remove("hide");
     } else {
       clearInterval(interval);
     }
