@@ -29,11 +29,12 @@ a:visited {
 }
 a:hover {
   color: white;
-  background-color: gray;
+  background-color: #89416e;
   text-decoration: none;
   padding: 6px;
   border-radius: 4px;
 }
+
 
 /* Main Header Format*/
 #main-header ul {
@@ -83,6 +84,7 @@ a:hover {
 #maincontent-header {
   justify-content: center;
   margin-top: 55px;
+  color:white;
 }
 #maincontent-header h1 {
   position: absolute;
@@ -119,7 +121,8 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1px;
-  background-color: lightgray;
+  background-color: #89416e;
+  color:white;
 }
 #photo-gallery h3 {
   text-align: center;
@@ -157,6 +160,8 @@ input[type="text"] {
   justify-content: space-between;
   background-color: lightgray;
   margin-top: 10px;
+  background-color: #89416e;
+  color:white;
 }
 #footer-menu ul {
   display: flex;

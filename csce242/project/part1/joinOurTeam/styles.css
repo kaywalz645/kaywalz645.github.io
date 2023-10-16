@@ -29,11 +29,12 @@ a:visited {
 }
 a:hover {
   color: white;
-  background-color: gray;
+  background-color: #89416e;
   text-decoration: none;
   padding: 6px;
   border-radius: 4px;
 }
+
 
 /* Main Header Format*/
 #main-header ul {
@@ -58,7 +59,8 @@ a:hover {
 /* Join Our Team Section */
 #joinourteam {
   justify-content: center;
-  background-color: lightgray;
+  background-color: #89416e;
+  color:white;
 }
 #joinourteam ul {
   display: flex;
@@ -84,7 +86,8 @@ a:hover {
     width:100px;
 }
 .dark{
-    background-color: lightgray;
+    background-color: #c687ae;
+    color:white;
 }
 
 
@@ -135,6 +138,8 @@ a:hover {
   justify-content: space-between;
   background-color: lightgray;
   margin-top: 10px;
+  background-color: #89416e;
+  color:white;
 }
 #footer-menu ul {
   display: flex;

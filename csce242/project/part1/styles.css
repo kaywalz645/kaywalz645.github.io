@@ -29,7 +29,7 @@ a:visited {
 }
 a:hover {
   color: white;
-  background-color: gray;
+  background-color: #89416e;
   text-decoration: none;
   padding: 6px;
   border-radius: 4px;
@@ -44,6 +44,9 @@ a:hover {
 #main-header li {
   padding-bottom: 5px;
   text-align: center;
+}
+#mainpage-title {
+  color: #89416e;
 }
 
 /* Smaller Resolution Menu */
@@ -96,7 +99,7 @@ a:hover {
 /* What We Do Section */
 #whatwedo {
   flex-direction: column;
-  background-color: lightgray;
+  background-color: #89416e;
 }
 #whatwedo-text {
   display: flex;
@@ -105,6 +108,7 @@ a:hover {
   flex-grow: 1;
   align-items: center;
   padding: 20px 0;
+  color: white;
 }
 #whatwedo-p {
   text-align: left;
@@ -140,12 +144,17 @@ a:hover {
 
 /* Plan Your Event Section */
 #planyourevent {
-  background-color: lightgray;
+  background-color: #89416e;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 #planyourevent-text {
   max-width: 500px;
+  color: white;
+}
+#eventsHeaderImg{
+  width: 400px;;
+  height: 240px;
 }
 /* Join Our Team Section */
 #joinourteam {
@@ -158,10 +167,12 @@ a:hover {
 
 /* Footer */
 #footer-menu {
-    align-items: center;
-    justify-content: space-between;
-    background-color: lightgray;
-    margin-top:10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  margin-top: 10px;
+  background-color: #89416e;
+  color: white;
 }
 #footer-menu ul {
   display: flex;
@@ -173,7 +184,7 @@ a:hover {
 #footer-menu li {
   padding-bottom: 5px;
   text-align: center;
-  padding:5px;
+  padding: 5px;
 }
 
 /* Wider Resolution */

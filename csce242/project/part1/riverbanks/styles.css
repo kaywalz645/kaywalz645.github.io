@@ -98,6 +98,8 @@ a:hover {
   justify-content: space-around;
   margin-right: 30px;
   flex-wrap: wrap;
+  background-color: #89416e;
+  color:white;
 }
 #hoursToday ul {
   display: flex;
@@ -111,9 +113,8 @@ a:hover {
   width: 150px;
 }
 #hoursToday img {
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  max-height: 100%; /* Ensure the image doesn't exceed the container height */
-  height: auto;
+  max-width: 100%; 
+  max-height: 100%; 
 }
 #maincontent-header {
   text-align: center;
@@ -124,7 +125,7 @@ a:hover {
 #directions {
   text-align: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 /* Footer */
@@ -133,6 +134,8 @@ a:hover {
   justify-content: space-between;
   background-color: lightgray;
   margin-top: 10px;
+  background-color: #89416e;
+  color:white;
 }
 #footer-menu ul {
   display: flex;
