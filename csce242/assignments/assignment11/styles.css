@@ -1,0 +1,49 @@
+/* Text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Main Structure */
+
+.flex{
+    display:flex;
+}
+
+#movies-list{
+    flex-direction: column;
+   
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    transition: transform .2s;
+    border:solid 5px #143c64;
+}
+img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+section{
+    display:flex;
+    flex-direction: row;
+    background-color: #2778c7;
+    padding:10px;
+    margin:25px;
+}
+
+h3 {
+    padding:10px;
+    margin-left:35px;
+}
+
+main{
+background-color:#3399FF;
+    padding:20px;
+}
+
+li{
+    list-style-type: none;
+    padding:5px;
+}
