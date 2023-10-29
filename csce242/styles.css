@@ -9,6 +9,10 @@
 #title {
   text-align: center;
 }
+
+img{
+  max-width: 300px;
+}
 /* Typography */
 
 body {
@@ -41,7 +45,6 @@ main h2 {
 }
 
 .assignmentsbody li {
-  
   list-style-type: none;
 }
 
