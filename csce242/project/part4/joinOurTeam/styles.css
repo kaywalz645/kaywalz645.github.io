@@ -35,6 +35,7 @@ a:hover {
   border-radius: 4px;
 }
 
+
 /* Main Header Format*/
 #main-header ul {
   list-style-type: none;
@@ -45,14 +46,56 @@ a:hover {
   padding-bottom: 5px;
   text-align: center;
 }
-#mainpage-title {
-  color: #89416e;
+
+/* Main-Content Basic Flex Container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
+.flex-container ul {
+  list-style-type: none;
+}
+
+/* Join Our Team Section */
+#joinourteam {
+  justify-content: center;
+  background-color: #89416e;
+  color:white;
+}
+#joinourteam ul {
+  display: flex;
+  flex-direction: row;
+}
+#joinourteam-title {
+  max-width: 200px;
+}
+#joinourteam-text {
+  max-width: 600px;
+  padding: 10px;
+}
+
+/* Positions Open Section */
+.positions-open {
+    justify-content: space-between;
+}
+.positions-open li{
+    width:100%;
+}
+.positions-open button{
+    margin-right:50px;
+    width:100px;
+}
+.dark{
+    background-color: #c687ae;
+    color:white;
+}
+
+
+
 
 /* Smaller Resolution Menu */
 #menu {
   margin-top: 60px;
-  /* background-color: gray; */
 }
 #menu ul {
   display: flex;
@@ -74,95 +117,19 @@ a:hover {
   display: none;
 }
 
-/* Main */
-/* Main-Content Basic Flex Container */
-.flex-container {
+/* Main Content Header/Image */
+#maincontent-header {
+  padding: 15px;
+  padding-left: 75px;
+}
+.img-stretch {
   display: flex;
-  flex-direction: row;
+  width: 100%;
 }
-.flex-container ul {
-  list-style-type: none;
-}
-/* Mainpage Title/Image */
-#mainpage-title {
-  margin-top: 150px;
-  width: 370px;
-  margin-left: 8%;
-}
-#mainpage-flex1 {
-  justify-content: space-between;
-}
-#mainpage-img1 {
-  margin-right: 8%;
-}
-
-/* What We Do Section */
-#whatwedo {
-  flex-direction: column;
-  background-color: #89416e;
-}
-#whatwedo-text {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  flex-grow: 1;
-  align-items: center;
-  padding: 20px 0;
-  color: white;
-}
-#whatwedo-p {
-  text-align: left;
-  max-width: 800px;
-  padding: 5px;
-}
-#whatwedo-photos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1px;
-}
-#whatwedo-photos li {
-  margin: 0 5%;
-}
-
-/* Who We Are Section */
-#whoweare {
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#whoweare ul {
-  text-align: center;
-  justify-content: center;
-  padding: 1px;
-}
-#whoweare-title {
-  text-align: center;
-  padding: 5px;
-}
-
-/* Plan Your Event Section */
-#planyourevent {
-  background-color: #89416e;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#planyourevent-text {
-  max-width: 500px;
-  color: white;
-}
-#eventsHeaderImg {
-  width: 400px;
-  height: 240px;
-}
-/* Join Our Team Section */
-#joinourteam {
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#joinourteam-text {
-  max-width: 500px;
+.img-stretch img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Footer */
@@ -172,7 +139,7 @@ a:hover {
   background-color: lightgray;
   margin-top: 10px;
   background-color: #89416e;
-  color: white;
+  color:white;
 }
 #footer-menu ul {
   display: flex;

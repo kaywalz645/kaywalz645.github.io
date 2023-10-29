@@ -45,9 +45,6 @@ a:hover {
   padding-bottom: 5px;
   text-align: center;
 }
-#mainpage-title {
-  color: #89416e;
-}
 
 /* Smaller Resolution Menu */
 #menu {
@@ -96,73 +93,29 @@ a:hover {
   margin-right: 8%;
 }
 
-/* What We Do Section */
-#whatwedo {
-  flex-direction: column;
-  background-color: #89416e;
+/* Main Content */
+#maincontent-header {
+  text-align: center;
 }
-#whatwedo-text {
+
+/* Input for Contact Us */
+#inputContact{
   display: flex;
   flex-direction: column;
-  text-align: center;
-  flex-grow: 1;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
-  color: white;
 }
-#whatwedo-p {
-  text-align: left;
-  max-width: 800px;
-  padding: 5px;
+#inputContact ul{
+  padding:10px;
+  margin:0;
 }
-#whatwedo-photos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1px;
+#inputContact input{
+  width:500px;
+  height:50px;
 }
-#whatwedo-photos li {
-  margin: 0 5%;
-}
-
-/* Who We Are Section */
-#whoweare {
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#whoweare ul {
-  text-align: center;
-  justify-content: center;
-  padding: 1px;
-}
-#whoweare-title {
-  text-align: center;
-  padding: 5px;
-}
-
-/* Plan Your Event Section */
-#planyourevent {
-  background-color: #89416e;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#planyourevent-text {
-  max-width: 500px;
-  color: white;
-}
-#eventsHeaderImg {
-  width: 400px;
-  height: 240px;
-}
-/* Join Our Team Section */
-#joinourteam {
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#joinourteam-text {
-  max-width: 500px;
+.larger-box {
+  width:500px;
+  height:250px;
 }
 
 /* Footer */
@@ -172,7 +125,7 @@ a:hover {
   background-color: lightgray;
   margin-top: 10px;
   background-color: #89416e;
-  color: white;
+  color:white;
 }
 #footer-menu ul {
   display: flex;
