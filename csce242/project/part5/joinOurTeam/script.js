@@ -25,14 +25,6 @@ const getPositons = async () => {
   }
 };
 
-// const showPositionsOpen = async () => {
-//   let positionsOpen = await getPositons();
-//   let positonSection = document.getElementById("positions-list");
-
-//   positionsOpen.forEach((position) => {
-//     positonSection.append(getPositionItem(position));
-//   });
-// };
 
 const showPositionsOpen = async () => {
   let positionsOpen = await getPositons();
