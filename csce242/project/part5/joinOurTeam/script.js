@@ -13,7 +13,7 @@ const toggleHamMenu = () => {
 };
 
 const getPositons = async () => {
-  const path = "./positionsOpen.json";
+  const path = "https://kaywalz645.github.io/csce242/project/part5/joinOurTeam/json/positionsOpen.json";
   try {
     const response = await fetch(path);
     return await response.json();
@@ -25,26 +25,49 @@ const getPositons = async () => {
   }
 };
 
+// const showPositionsOpen = async () => {
+//   let positionsOpen = await getPositons();
+//   let positonSection = document.getElementById("positions-list");
+
+//   positionsOpen.forEach((position) => {
+//     positonSection.append(getPositionItem(position));
+//   });
+// };
+
 const showPositionsOpen = async () => {
   let positionsOpen = await getPositons();
-  let positonSection = document.getElementById("positions-list");
+  let positionSection = document.getElementById("positions-list");
 
-  positionsOpen.forEach((position) => {
-    positonSection.append(getPositionItem(position));
+  positionsOpen.forEach((position, index) => {
+    const section = getPositionItem(position);
+    section.classList.add(index % 2 === 0 ? "dark" : "light");
+    positionSection.appendChild(section);
   });
 };
 
 const getPositionItem = (position) => {
   let section = document.createElement("section");
-  let ul = document.createElement("ul");
+  section.classList.add("flex-container");
+  section.classList.add("positions-open");
 
+  let ul = document.createElement("ul");
+  
   section.append(ul);
   ul.append(getLi(position.title));
   ul.append(getLi(position.description));
 
-  section.append(div);
+  let ul2 = document.createElement("ul");
+  section.append(ul2);
+  ul2.append(getButton());
+  getButton();
   return section;
 };
+
+const getButton = () => {
+  const button = document.createElement("button");
+  button.textContent = "Apply Here"; 
+  return button;
+}
 
 const getLi = (data) => {
   const li = document.createElement("li");

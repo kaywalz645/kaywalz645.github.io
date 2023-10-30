@@ -6,7 +6,9 @@ header {
 .hide {
   display: none;
 }
-
+ul{
+  list-style-type: none;
+}
 /* Text */
 body {
   font-family: Arial, Helvetica, sans-serif;
