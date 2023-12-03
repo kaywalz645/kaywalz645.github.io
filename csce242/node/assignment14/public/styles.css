@@ -1,0 +1,42 @@
+
+h1 {
+    color:red;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color:black;
+}
+p{
+    color:black;
+}
+img {
+    max-width:400px;
+}
+#people{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+}
+section{
+    margin:10px;
+    background-color: lightgray;
+    border:darkolivegreen 2px solid;
+    padding:15px;
+}
+#container{
+    margin:10px;
+    background-color: lightgray;
+    border:darkolivegreen 2px solid;
+    padding:15px;
+}
+.hidden {
+    display:none;
+}
+/* #add-person{
+    display:none;
+} */
