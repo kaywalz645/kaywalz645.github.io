@@ -6,58 +6,51 @@
   </head>
 
   <body>
-    <header>
-      <h1>People</h1>
-      <a href="#" id="add-link">+</a>
+    <header> 
+        <h1>People</h1>
+        <a href="#" id = "add-link">+</a>
     </header>
-
-    <div class="flex-box">
-      <div id="people-list"></div>
-      <div id="people-details-column"></div>
-
-      <div id="people-details"></div>
+        <div class="flex-box">
+          <div id="people-list"></div>
+          <div id="people-details-column"></div>
+    
+          <div id="people-details"></div>
+        </div>
+          <div id="container" class="dialog hidden">
+            <span class="close" id="close-button">&times;</span>
+            <form id="add-person" method="post">
+              <h2 id="add-edit-title">Add Person</h2>
+              <input type="hidden" name="_id" value="-1" />
+              <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </p>
+              <p>
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" required />
+              </p>
+              <p>
+                <label for="fColor">Favorite Color</label>
+                <input type="text" id="fColor" name="fColor" required />
+              </p>
+              <p>
+                <label for="fActivity">Favorite Activity</label>
+                <input type="text" id="fActivity" name="activity" required />
+              </p>
+              <p>
+                <label >Favorite Foods</label>
+                <a href="#" id = "add-food">Add Favorite Food</a>
+                <section id="favorite-food-box"></section>
+              </p>
+              <p>
+                <label for="img">Image of Yourself</label>
+                <input type="file" id="img" name="img" required />
+              </p>
+              <p>
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
     </div>
-      <div id="container" class="dialog hidden">
-        <span class="close" id="close-button">&times;</span>
-        <form id="add-person" method="post">
-          <h2 id="add-edit-title">Add Person</h2>
-          <input type="hidden" name="_id" value="-1" />
-          <p>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </p>
-          <p>
-            <label for="age">Age</label>
-            <input type="text" id="age" name="age" required />
-          </p>
-          <p>
-            <label for="fColor">Favorite Color</label>
-            <input type="text" id="fColor" name="fColor" required />
-          </p>
-          <p>
-            <label for="fActivity">Favorite Activity</label>
-            <input type="text" id="fActivity" name="activity" required />
-          </p>
-          <p>
-            <label >Favorite Foods</label>
-            <a href="#" id = "add-food">Add Favorite Food</a>
-            <section id="favorite-food-box"></section>
-          </p>
-          <p>
-            <label for="img">Image of Yourself</label>
-            <input type="file" id="img" name="img" required />
-          </p>
-          <p>
-            <button type="submit">Submit</button>
-          </p>
-        </form>
-      </div>
   </body>
 </html>
-<!-- _id: 1,
-    name: "Samatha Young",
-    age: "47",
-    fcolor: "Green",
-    activity: "Knitting",
-    fFoods: [" Yogurt", " Candy", " Pizza"],
-    img: -->
