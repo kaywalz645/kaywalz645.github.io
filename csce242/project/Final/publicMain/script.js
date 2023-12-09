@@ -13,21 +13,21 @@ const toggleHamMenu = () => {
 }
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Get the navigation links
-//     const navigationLinks = document.querySelectorAll('a');
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the navigation links
+    const navigationLinks = document.querySelectorAll('a');
 
-//     // Add click event listeners to each navigation link
-//     navigationLinks.forEach(link => {
-//         link.addEventListener('click', function (event) {
-//             // Prevent the default behavior of the link (e.g., following the href)
-//             event.preventDefault();
+    // Add click event listeners to each navigation link
+    navigationLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Prevent the default behavior of the link (e.g., following the href)
+            event.preventDefault();
 
-//             // Get the href attribute of the clicked link
-//             const targetPage = this.getAttribute('href');
+            // Get the href attribute of the clicked link
+            const targetPage = this.getAttribute('href');
 
-//             // Change the current page to the target page
-//             window.location.href = targetPage;
-//         });
-//     });
-// });
+            // Change the current page to the target page
+            window.location.href = targetPage;
+        });
+    });
+});
