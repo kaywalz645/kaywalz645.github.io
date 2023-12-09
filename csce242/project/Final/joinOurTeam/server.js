@@ -71,7 +71,7 @@ const createJob = async (job, res) => {
   res.send(job);
 };
 
-app.put("/api/jobs/:id", upload.single("img"), (req, res) => {
+app.put("/api/jobs/:id", (req, res) => {
   const result = validateJob(req.body);
   console.log(result);
   if (result.error) {
