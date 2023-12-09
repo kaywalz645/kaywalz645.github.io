@@ -121,6 +121,10 @@ a:hover {
   text-align: center;
   font-weight: bold;
 }
+
+main {
+  flex-direction: column;
+}
 /* Footer */
 #footer-menu {
   align-items: center;
