@@ -65,22 +65,22 @@
             <hr>
         </div>
         <form class="flex-container eventform" id="inputEvent" action="https://api.web3forms.com/submit" method="POST">
-            <input  type="hidden" name="access_key" value="67091900-3256-42f8-8a8a-16569237c840"/>
+            <input type="hidden" name="access_key" value="67091900-3256-42f8-8a8a-16569237c840"/>
             <ul>
                 <li><label for="firstName">First Name</label></li>
-                <li><input class="small-input" name="name" type="text" id="firstName"></li>
+                <li><input class="small-input" name="name" type="text" id="firstName" required></li>
             </ul>
             <ul>
                 <li><label for="lastName">Last Name</label></li>
-                <li><input class="small-input" name="name" type="text" id="lastName"></li>
+                <li><input class="small-input" name="name" type="text" id="lastName" required></li>
             </ul>
             <ul>
                 <li><label for="email">Email Address</label></li>
-                <li><input class="small-input" name="email" type="text" id="email"></li>
+                <li><input class="small-input" name="email" type="text" id="email" required></li>
             </ul>
             <ul>
                 <li><label for="organization">Organization</label></li>
-                <li><input class="small-input" name="Organization" type="text" id="organization"></li>
+                <li><input class="small-input" name="Organization" type="text" id="organization" required></li>
             </ul>
         <div class="eventformheader">
             <h2>Event Details</h2>
@@ -89,19 +89,19 @@
         <div class="flex-container eventform">
             <ul>
                 <li><label for="typeOfEvent">Type of Event</label></li>
-                <li><input class="small-input" name="Type of Event" type="text" id="typeOfEvent"></li>
+                <li><input class="small-input" name="Type of Event" type="text" id="typeOfEvent" required></li>
             </ul>
             <ul>
                 <li><label for="dates">Perferred Dates</label></li>
-                <li><input class="small-input" name="Perferred Dates" type="text" id="dates"></li>
+                <li><input class="small-input" name="Perferred Dates" type="text" id="dates" required></li>
             </ul>
             <ul>
                 <li><label for="guestNumbers">Number of Guests</label></li>
-                <li><input class="small-input" name="Number of Guests" type="text" id="guestNumbers"></li>
+                <li><input class="small-input" name="Number of Guests" type="text" id="guestNumbers" required></li>
             </ul>
             <ul>
                 <li><label for="timings">Timings</label></li>
-                <li><input class="small-input" name="Timings" type="text" id="timings"></li>
+                <li><input class="small-input" name="Timings" type="text" id="timings" required></li>
             </ul>
         </div>
         <div class="eventformheader">
@@ -111,7 +111,7 @@
         <div class="flex-container eventform">
             <ul>
                 <li><label for="furtherNotes">Further Notes</label></li>
-                <li><input class="small-input" name="Further Notes" type="text" id="furtherNotes"></li>
+                <li><input class="small-input" name="Further Notes" type="text" id="furtherNotes" required></li>
             </ul>
         </div>
         <div class="flex-container" id="submitButton">
