@@ -1,0 +1,253 @@
+/* Structure */
+header {
+  background-color: white;
+  border: solid lightgray 1px;
+}
+.hide {
+  display: none;
+}
+ul{
+  list-style-type: none;
+}
+/* Text */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links */
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+a:hover {
+  color: white;
+  background-color: #89416e;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+
+/* Main Header Format*/
+#main-header ul {
+  list-style-type: none;
+  display: flex;
+  padding: 3px;
+}
+#main-header li {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Main-Content Basic Flex Container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container ul {
+  list-style-type: none;
+}
+
+/* Join Our Team Section */
+#joinourteam {
+  justify-content: center;
+  background-color: #89416e;
+  color:white;
+}
+#joinourteam ul {
+  display: flex;
+  flex-direction: row;
+}
+#joinourteam-title {
+  max-width: 200px;
+}
+#joinourteam-text {
+  max-width: 600px;
+  padding: 10px;
+}
+
+/* Positions Open Section */
+.positions-open {
+    justify-content: space-between;
+}
+.positions-open li{
+    width:100%;
+}
+.positions-open button{
+    margin-right:50px;
+    width:100px;
+}
+.dark{
+    background-color: #c687ae;
+    color:white;
+}
+
+
+#formJobs {
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width:90%;
+  background-color: #C687AE;
+  padding-bottom: 10px;
+}
+#formJobs ul{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding:5px;
+  flex-direction: column;
+}
+#formJobs li {
+  width:100%;
+  justify-content: center;
+  padding:5px;
+}
+#formJobs input{
+  width:70%;
+  margin: 0;
+  width:90%;
+}
+#formJobs textarea{
+  width:400px;
+  width:90%;
+}
+button {
+  padding: 10px 25px; 
+  background-color: #89416E; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 15px; 
+  transition: background-color 0.3s ease;
+  margin:5px;
+  
+}
+label {
+  color:white;
+}
+#submitbutton {
+  justify-content: flex-end;
+}
+#addPositionButton{
+  padding: 10px 25px; 
+  background-color: #89416E; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  transition: background-color 0.3s ease;
+}
+#add-position-button {
+  padding:15px;
+  justify-content: flex-end;
+}
+#edit-link{
+margin:5px;
+}
+#delete-link{
+  margin:5px;
+}
+/* Smaller Resolution Menu */
+#menu {
+  margin-top: 60px;
+}
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+/* Header Images/Menu Image */
+#toggle-menu {
+  position: absolute;
+  right: 20px;
+}
+#header-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#wider-logo {
+  display: none;
+}
+
+/* Main Content Header/Image */
+#maincontent-header {
+  padding: 15px;
+  padding-left: 75px;
+}
+.img-stretch {
+  display: flex;
+  width: 100%;
+}
+.img-stretch img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+#footer-menu {
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  margin-top: 10px;
+  background-color: #89416e;
+  color:white;
+}
+#footer-menu ul {
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  padding: 3px;
+  flex-direction: row;
+}
+#footer-menu li {
+  padding-bottom: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Wider Resolution */
+@media only screen and (min-width: 791px) {
+  /* Larger Menu Format */
+  #menu {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  #menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #menu li {
+    padding: 7px;
+  }
+  #wider-logo {
+    display: flex;
+  }
+  #main-header-logo {
+    display: none;
+  }
+  a:link {
+    border: solid gray 1px;
+  }
+}
