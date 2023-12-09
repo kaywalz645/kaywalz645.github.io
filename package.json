@@ -2,7 +2,7 @@
   "name": "kaywalz645.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "csce242/project/Final/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
