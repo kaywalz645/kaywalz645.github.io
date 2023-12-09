@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const multer = require("multer");
-app.use(express.static("public"));
+app.use(express.static("publicMain"));
 // Set the "final" folder as the static content root
 // app.use(express.static(path.join(__dirname, 'Final')));
 
