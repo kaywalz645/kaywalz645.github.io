@@ -35,6 +35,26 @@ a:hover {
   border-radius: 4px;
 }
 
+.home-href:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+}
+.home-href:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.home-href:hover {
+  color: #89416e;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
 /* Main Header Format*/
 #main-header ul {
   list-style-type: none;
@@ -172,5 +192,8 @@ main {
   }
   a:link {
     border: solid gray 1px;
+  }
+  .home-href:link {
+    border:none;
   }
 }

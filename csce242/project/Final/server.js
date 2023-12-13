@@ -120,24 +120,10 @@ function updateJob(req, res) {
   });
 }
 
-// function removeJob(res, id) {
-//   Job.findByIdAndDelete(id, (err, deletedJob) => {
-//     if (err) {
-//       console.error('Error deleting job:', err);
-//       res.status(500).send("Internal Server Error");
-//     } else if (!deletedJob) {
-//       res.status(404).send("Job not found");
-//     } else {
-//       res.send(deletedJob);
-//     }
-//   });
-// }
-
 function validateJob(job) {
   const schema = Joi.object({
     name: Joi.string().min(3).required(),
     description: Joi.string().min(3).required(),
-    // _id: Joi.allow(""),
   });
 
   return schema.validate(job);

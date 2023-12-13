@@ -19,7 +19,7 @@ const getJobs = async() => {
     return data;
   } catch (error) {
     console.error("Error fetching positions:", error);
-    throw error; // rethrow the error so it can be handled elsewhere if needed
+    throw error; 
   }
 };
 
@@ -103,8 +103,7 @@ const displayDetails = (job) => {
     e.preventDefault();
     populateEditForm(job);
     showHideAdd();
-    // document.querySelector(".dialog").classList.remove("transparent");
-    // document.getElementById("modal-background").classList.remove("hidden");
+    
   };
 
   dLink.onclick = (e) => {
@@ -132,7 +131,6 @@ const deleteJob = async (job) => {
 
   let result = await response.json();
   showJobs();
-  // document.getElementById("job-details").innerHTML = "";
   resetForm();
   showJobs();
 }
@@ -143,16 +141,6 @@ const populateEditForm = (job) => {
   form.name.value = job.name;
   form.description.value = job.description;
 
-  // const ingredientsP = document.getElementById("ingredient-boxes");
-  // ingredientsP.innerHTML = "";
-  // console.log(job.ingredients);
-
-  // for (let i in recipe.ingredients) {
-  //   const input = document.createElement("input");
-  //   input.type = "text";
-  //   input.value = recipe.ingredients[i];
-  //   ingredientsP.append(input);
-  // }
 };
 
 const addEditJob = async (e) => {
@@ -167,7 +155,6 @@ const addEditJob = async (e) => {
     jobData[key] = value;
   }
   
-  // Now you have an object with key-value pairs
   console.log(jobData);
 
   let response;
@@ -179,7 +166,7 @@ const addEditJob = async (e) => {
       headers: {
         "Content-Type": "application/json", 
       },
-      body: JSON.stringify(jobData), //formData
+      body: JSON.stringify(jobData), 
     });
   } else {
     console.log("editting");
@@ -188,7 +175,7 @@ const addEditJob = async (e) => {
       headers: {
         "Content-Type": "application/json", 
       },
-      body: JSON.stringify(jobData),//formData
+      body: JSON.stringify(jobData),
     });
   }
 
@@ -240,7 +227,5 @@ window.onload = () => {
   document.getElementById("formJobs").onsubmit = addEditJob;
   document.getElementById("add-position-button").onclick = showHideAdd;
 
-  // document.querySelector(".close").onclick = () => {
-  //   document.querySelector(".dialog").classList.add("transparent");
-  // };
+  
 };

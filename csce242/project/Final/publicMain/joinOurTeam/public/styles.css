@@ -250,4 +250,7 @@ margin:5px;
   a:link {
     border: solid gray 1px;
   }
+  .home-href:link {
+    border:none;
+  }
 }

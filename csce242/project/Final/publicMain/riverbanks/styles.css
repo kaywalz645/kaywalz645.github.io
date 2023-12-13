@@ -176,4 +176,9 @@ a:hover {
   a:link {
     border: solid gray 1px;
   }
+  .home-href:link {
+    border:none;
+  }
 }
+
+
