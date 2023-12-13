@@ -27,7 +27,7 @@ const jobSchema = new mongoose.Schema({
 const Job = mongoose.model("Job", jobSchema, "test.jobs");
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'publicMain')));
 app.use(express.json());
 app.use(cors());
 
