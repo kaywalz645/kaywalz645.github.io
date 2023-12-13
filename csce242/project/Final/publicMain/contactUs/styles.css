@@ -119,17 +119,17 @@ a:hover {
 }
 
 /* Input for Contact Us */
-#inputContact{
+#form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-#inputContact ul{
+#form ul{
   padding:10px;
   margin:0;
 }
-#inputContact input{
+#form input{
   width:500px;
   height:50px;
 }
@@ -142,6 +142,10 @@ a:hover {
   font-weight: bold;
 }
 
+p{
+  display:flex;
+  flex-direction: column;
+}
 main {
   flex-direction: column;
 }
