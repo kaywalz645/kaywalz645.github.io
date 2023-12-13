@@ -19,7 +19,6 @@ mongoose.connect("mongodb+srv://kaybalz645:dreamSMP645@kaylee.ixxu8d8.mongodb.ne
 
 
 const jobSchema = new mongoose.Schema({
-  //_id: mongoose.SchemaTypes.ObjectId,
   name: String,
   description: String,
 });
