@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Kaylee Walz CSCE242-->
+
+<head>
+    <title>CSCE242 Project Kaylee Walz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div id="main-header-logo">
+            <img id="header-logo" src="https://place-hold.it/40x40/666/fff.png/000" />
+            <img id="toggle-menu" src="../images/hamburgerMenu.png" />
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <img href="../index.html" id="wider-logo" src="https://place-hold.it/40x40/666/fff.png/000" />
+                </li>
+                <li><a href="../../index.html"> Who We Are</a></li>
+                <li><a href="../../index.html"> What We Do</a></li>
+            </ul>
+            <ul>
+                <li><a href="../../riverbanks/index.html">Riverbanks</a></li>
+                <li><a href="../../planYourEvent/index.html">Plan Your Event</a></li>
+                <li><a href="../../joinOurTeam/public/index.html">Join Our Team</a></li>
+                <li><a href="../../contactUs/index.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="maincontent-header">Join Our Team</h1>
+        <div class="flex-container img-stretch">
+            <img src="../images/joinOurTeamBanner.jpg" />
+        </div>
+        <div class="flex-container" id="joinourteam">
+            <ul>
+                <li id="joinourteam-title">
+                    <h1>Careers At Riverbanks</h1>
+                </li>
+                <li id="joinourteam-text">
+                    <p>
+                        By joining our team you are helping wildlife and providing to the
+                        amazing guests of Riverbanks!
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="positonsheader">
+            <h1>Positions Open</h1>
+            <hr />
+        </div>
+        <div id="positions-list"></div>
+        <div id="add-position-button" class="flex-container">
+            <button id="addPositionButton">Add New Listing</button>
+        </div>
+        <div class="flex-container dialog hide">
+            <form id="formJobs"  method="post">
+                <input type="hidden" name="_id" value="" />
+                <p>
+                    <label for="name">Position Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
+                <p>
+                    <label for="description">Position Description:</label>
+                    <input id="description" name="description" required></input>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-menu" class="flex-container">
+            <ul>
+                <li>
+                    <img id="footer-logo" src="https://place-hold.it/40x40/666/fff.png/000" />
+                </li>
+            </ul>
+            <ul>
+                <li>Who We Are</li>
+                <li>What We Do</li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
