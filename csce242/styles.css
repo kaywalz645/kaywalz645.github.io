@@ -1,10 +1,5 @@
 /* Structure */
 
-#nametag {
-  position: absolute;
-  top: 0%;
-  left: 5%;
-}
 
 #title {
   text-align: center;
@@ -16,6 +11,7 @@
   color: #ff69b4;
   letter-spacing: 5px;
 }
+
 img{
   max-width: 300px;
 }
