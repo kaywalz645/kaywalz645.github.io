@@ -10,6 +10,9 @@
   text-align: center;
 }
 
+#header {
+  font-family:fantasy;
+}
 img{
   max-width: 300px;
 }

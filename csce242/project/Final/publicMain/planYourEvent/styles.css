@@ -178,10 +178,15 @@ input[type="text"] {
   display: flex;
   justify-content: center;
 }
+button {
+  justify-content: center;
+  margin-left:45%;
+}
 #submitbutton {
   border-color: white;;
   color:white;
   background-color: #89416e;
+  justify-content: center;
 }
 /* Footer */
 #footer-menu {

@@ -85,6 +85,7 @@ const getJobs = async (res) => {
     res.status(500).send(err);
   }
 };
+
 async function getJob(id, res) {
   const job = await Job.findOne({ _id: id });
   res.send(job);
