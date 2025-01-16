@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Kaylee Walz CSCE242-->
+
+<head>
+    <title>CSCE242 Project Kaylee Walz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <header id="main-header">
+        <div id="main-header-logo">
+            <img id="header-logo" src="https://place-hold.it/40x40/666/fff.png/000">
+            <img id="toggle-menu" src="../images/hamburgerMenu.png">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><img id="wider-logo" src="https://place-hold.it/40x40/666/fff.png/000"></li>
+                <li><a class="home-href" href="../index.html"> Who We Are</a></li>
+                <li><a class="home-href" href="../index.html"> What We Do</a></li>
+            </ul>
+            <ul>
+                <li><a href="../riverbanks/index.html">Riverbanks</a></li>
+                <li><a href="../planYourEvent/index.html">Plan Your Event</a></li>
+                <li><a href="../joinOurTeam/public/index.html">Join Our Team</a></li>
+                <li><a href="../contactUs/index.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1 id="maincontent-header">Contact Us</h1>
+        <form class="flex-container" id="form" action="https://api.web3forms.com/submit" method="POST">
+            <input  type="hidden" name="access_key" value="67091900-3256-42f8-8a8a-16569237c840"/>
+            <p>
+                <label for="name">Name</label>
+                <input  type="text" id="name" name="name" required/>
+            </p>
+            <p>
+                <label for="emailContactUs">Email Address</label>
+                <input  type="text" id="emailContactUs" name="email" required />
+            </p>
+            <p>
+                <label for="askAnything">Ask Anything</label>
+                <textarea class="larger-box" type="text" id="askAnything" name="message" required></textarea> 
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+            <p id="result"></p>
+        </form>
+        <section id="results" class="hide">
+            <p>
+                You have correctly submitted the page and a team member 
+                will contact you shortly.
+            </p>
+        </section>
+
+    </main>
+    <footer id="main-footer">
+        <div id="footer-menu" class="flex-container">
+            <ul>
+                <li><img id="footer-logo" src="https://place-hold.it/40x40/666/fff.png/000"></li>
+            </ul>
+            <ul>
+                <li> Who We Are</li>
+                <li> What We Do</li>
+                <li><a href="../contactUs/index.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
