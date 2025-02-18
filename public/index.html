@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+  <title>Portfolio Kaylee Walz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">Kaylee Walz</div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#development">Development</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="mobile-menu">
+          <ul>
+              <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+              <li><a href="#development" onclick="toggleMenu()">Development</a></li>
+              <li><a href="#design" onclick="toggleMenu()">Design</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+          </ul>
+      </div>
+  </header>
+<main>
+  <section class="landing">
+    <div class="left">
+        <img src="your-image.jpg" alt="Kaylee Walz">
+    </div>
+    <div class="right">
+        <h1>Hi, I'm Kaylee Walz</h1>
+        <p>Welcome to my website! I’m a passionate developer and designer crafting beautiful digital experiences.</p>
+    </div>
+</section>
+<script src="script.js"></script>
+</main>
+  <!-- <main>
+    <div class="introductionbox">
+      <p class="introduction">Hi, I'm Kaylee Walz!</p>
+    </div>
+    <h2>CSCE242: Web Applications - Assignments</h2>
+    <div class="assignmentsbody">
+      <ul id="assignment1">
+        <li><h3><a href="assignments/assignment1/index.html">Assignment 1 - Basic HTML</a></h3></li>
+        <li><img src="photos/assign1html.png"></li>
+        <li><p>In this assignment, we learned and applied simple HTML elements to make a basic webpage.</p></li>
+      </ul>
+      <ul id="assignment2">
+        <li><h3><a href="assignments/assignment2/index.html">Assignment 2 - Basic CSS</a></h3> </li>
+        <li><img src="photos/assign2css.png"></li>
+        <li><p>In this assignment, I applied simple css elements like borders and backgrounds to make our webpage look nicer.</p></li>
+      </ul>
+      <ul id="assignment3">
+        <li><h3> <a href="assignments/assignment3/index.html">Assignment 3 - Page Layout</a></h3></li>
+        <li><img src="photos/assign3flexbox.png"></li>
+        <li><p>In this assignment, I practiced flexboxes and their different elements to make the page look more seamless.</p></li>
+      </ul>
+      <ul id="assignment4">
+        <li><h3><a href="assignments/assignment4/index.html">Assignment 4 - Recreate UofSC</a></h3></li>
+        <li><img src="photos/assign4uofsc.png"></li>
+        <li><p>In this assignment, I practiced recreating a website using flexboxes and design on an actual webpage.</p></li>
+      </ul>
+      <ul id="assignment6">
+        <li><h3><a href="assignments/assignment5/index.html">Assignment 6 - Intro to JavaScript</a></h3></li>
+        <li><img src="photos/assign4uofsc.png"></li>
+        <li><p>In this assignment, I practiced different ways to put JavaScript in HTML and CSS.</p></li>
+      </ul>
+      <ul id="assignment7">
+        <li><h3><a href="assignments/assignment7/index.html">Assignment 7 - Conditionals</a></h3></li>
+        <li><img src="photos/assign7conditionals.png"></li>
+        <li><p>In this assignment, I practiced adding conditionals to a webpage in javascript</p></li>
+      </ul>
+      <ul id="assignment8">
+        <li><h3><a href="assignments/assignment8/index.html">Assignment 8 - Loops</a></h3></li>
+        <li><img src="photos/assign8loops.png"></li>
+        <li><p>In this assignment, I practiced adding loops and variables to a webpage in javascript</p></li>
+      </ul>
+      <ul id="assignment9">
+        <li><h3><a href="assignments/assignment9/index.html">Assignment 9 - Arrays</a></h3></li>
+        <li><img src="photos/assign9arrays.PNG"></li>
+        <li><p>In this assignment, I practiced arrays in javascript to make this webpage</p></li>
+      </ul>
+      <ul id="assignment10">
+        <li><h3><a href="assignments/assignment10/index.html">Assignment 10 - Classes</a></h3></li>
+        <li><img src="photos/assign10classes.PNG"></li>
+        <li><p>In this assignment, I practiced using classes in javascript to make this webpage</p></li>
+      </ul>
+      <ul id="assignment11">
+        <li><h3><a href="assignments/assignment11/index.html">Assignment 11 - JSON</a></h3></li>
+        <li><img src="photos/assign11json.png"></li>
+        <li><p>In this assignment, I practiced using JSON to make this webpage for movies.</p></li>
+      </ul>
+      <ul id="assignment12">
+        <li><h3><a href="https://helloworld-bpk3.onrender.com/">Assignment 12 - Render</a></h3></li>
+        <li><img src="photos/assign12node.png"></li>
+        <li><p><a href="https://github.com/kaywalz645/node-helloworld">Code Repo</a></p></li>
+        <li><p><a href="https://helloworld-bpk3.onrender.com/">Live Demo</a></p></li>
+      </ul>
+      <ul id="assignment13">
+        <li><h3><a href="https://helloworld-bpk3.onrender.com/">Assignment 13 - Express</a></h3></li>
+        <li><img src="photos/assign13express.png"></li>
+        <li><p><a href="https://github.com/kaywalz645/noderepo">Code Repo</a></p></li>
+        <li><p><a href="https://nodeassignment-oxnx.onrender.com/">Live Demo</a></p></li>
+      </ul>
+    </div>
+    <h2>Project</h2>
+    <div class ="assignmentsbody">
+      <ul id="project1">
+        <li><h3><a href="https://mockitt.wondershare.com/proto/e6wEwUtEs1nvouozaYwpv/sharing?view_mode=read_only">Project Pt. 2 - WireFrame</a></h3></li>
+        <li><img src="photos/project2wire.png"></li>
+        <li><p>In this assignment, we applied our website ideas to make a mock website.</p></li>
+      </ul>
+      <ul id="project2">
+        <li><h3><a href="project/part1/index.html">Project Pt. 3 - HTML and CSS</a></h3></li>
+        <li><img src="photos/projectpt3.PNG"></li>
+        <li><p>In this assignment, we added some nice designs to to our website.</p></li>
+      </ul>
+      <ul id="project5">
+        <li><h3><a href="project/part5/joinOurTeam/index.html">Project Pt. 5 - JSON</a></h3></li>
+        <li><img src="photos/projectpt5.png"></li>
+        <li><p>In this assignment, we applied our knowledge of JSON to our website.</p></li>
+      </ul>
+      <ul id="final">
+        <li><h3><a href="project/Final/index.html">Project Final</a></h3></li>
+        <li><img src="photos/projectpt5.png"></li>
+        <li><p>In this assignment, I attempted to use client and server side js to make my website responsive.</p></li>
+      </ul>
+    </div>
+  </main> -->
+</body>
+</html>

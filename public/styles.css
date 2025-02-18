@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Parkinsans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif; /* Change to your preferred font */
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Desktop Navigation */
+.desktop-nav ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.desktop-nav ul li {
+  display:inline;
+}
+
+.desktop-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.desktop-nav a:hover {
+  color: #f0a500;
+}
+
+/* Hide Desktop Nav on Mobile */
+@media (max-width: 768px) {
+  .desktop-nav {
+      display: none;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Show Hamburger on Small Screens */
+@media (max-width: 768px) {
+  .hamburger {
+      display: flex;
+  }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.mobile-menu ul li {
+  margin: 20px 0;
+}
+
+.mobile-menu ul li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Show mobile menu when active */
+.mobile-menu.active {
+  left: 0;
+}
+
+/* Landing */
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  background-color: #f5f5f5;
+  gap: 5%;
+}
+
+.left {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  width: 280px; 
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  flex: 0.5; 
+  max-width: 450px; 
+  text-align: left;
+}
+
+.right h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.right p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .landing {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+  }
+
+  .right {
+      max-width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Structure */
+/* html, body{
+  margin:0;
+  padding:0;
+}
+#title {
+  text-align: center;
+}
+
+img{
+  max-width: 300px;
+} */
+
+/* Typography */
+
+/* body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+
+/* Header */
+/* header{
+  display:flex;
+  background-color: #ff69b4;
+  height:50px;
+}
+
+/* Introduction Page */
+/* .introductionbox {
+  height:100vh;
+}
+
+.introduction {
+  display:flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  color: #ff69b4;
+  letter-spacing: 2px;
+  font-weight: 800;
+  padding: 10px;
+  justify-content:center;
+}   */
+ 
+/* CSCE242 Assignments Flexbox */
+/* .assignmentsbody {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.assignmentsbody ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+  padding: 1px;
+  flex-basis: 100px;
+  height:320px;
+  background-color: lightblue;
+  margin:10px;
+  
+}
+
+.assignmentsbody li {
+  list-style-type: none;
+}
+
+.assignmentsbody li p {
+  text-align: left;
+  padding-left: 15px;
+} */
+
+/* Links */
+/* a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+a:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 4px;
+} */
+
+/* Larger Resolution */
+/* @media only screen and (min-width: 600px) {
+  .assignmentsbody {
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .assignmentsbody ul {
+    padding: 10px;
+    flex-basis: 100px;
+  }
+  .assignmentsbody li img {
+    padding: 10px;
+  }
+} */
