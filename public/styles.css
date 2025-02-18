@@ -160,7 +160,7 @@ header {
   color: #555;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 1024px) {
   .landing {
       flex-direction: column;
