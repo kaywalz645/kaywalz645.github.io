@@ -1,4 +1,16 @@
 const express = require("express");
+<<<<<<< HEAD
+const app = express();
+const joi = require("joi");
+
+app.use(express.static("public"));
+app.use(express.json());
+
+app.get("/", (req,res) => {
+    res.sendFile(__dirname +"/index.html");
+
+})
+=======
 const Joi = require("joi");
 const multer = require("multer");
 const app = express();
@@ -137,3 +149,4 @@ const validatePerson = (person) => {
 
   return schema.validate(person);
 };
+>>>>>>> 0e9112b9b32546411dc8b9448021091eb34628ad
