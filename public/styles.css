@@ -156,7 +156,7 @@ header {
 }
 
 .typing-container {
-  min-height:90px;
+  min-height:100px;
 }
 .right {
   flex: 0.5; 
@@ -205,19 +205,26 @@ header {
       flex-direction: column;
       text-align: center;
       min-height: fit-content;
-      /* gap: 30px; */
   }
   .right h1 {
     text-align: center;
-  }
-  .right {
-    align-items: center;
   }
   .right {
       flex-direction: column;
       display:flex;
       max-width: 80%;
       align-items: center;
+  }
+  .typing-container {
+    min-height:110px;
+  }
+}
+@media (max-width: 660px) {
+  .btn {
+    margin-top:5%;
+  }
+  .typing-container {
+    min-height:125px;
   }
 }
 
@@ -280,7 +287,7 @@ header {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 660px) {
   .about-me {
     flex-direction: column;
     text-align: center;
@@ -413,4 +420,10 @@ header {
   
   .social-btn:hover {
     background: #555;
+  }
+
+  @media (max-width: 660px) {
+    .contact-section{
+      max-width: 90%;
+    }
   }
