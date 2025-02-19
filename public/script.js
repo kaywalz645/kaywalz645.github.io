@@ -4,17 +4,17 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const originalText = "This is an exmple of a senence with errrs."; // Contains intentional typos
-    const correctedText = "This is an example of a sentence with errors."; // Corrected version
+    const originalText = "I'm a creative designer and seelopr who loves turning ideas into betuifully functional digittal experiences."; // Contains intentional typos
+    const correctedText = "I’m a creative designer and developer who loves turning ideas into beautifully functional digital experiences"; // Corrected version
     const mistakes = [
-        { wrong: "exmple", correct: "example", position: 11 },
-        { wrong: "senence", correct: "sentence", position: 24 },
-        { wrong: "errrs", correct: "errors", position: 37 }
+        { wrong: "seelopr", correct: "developer", position: 28 },
+        { wrong: "betuifully", correct: "beautifully", position: 65 },
+        { wrong: "digittal", correct: "digital", position: 87}
     ];
 
-    const speed = 100; // Normal typing speed (ms)
-    const backspaceSpeed = 50; // Faster backspace speed
-    const pauseBeforeBackspace = 500; // Pause before correcting mistake
+    const speed = 30; // Normal typing speed (ms)
+    const backspaceSpeed = 20; // Faster backspace speed
+    const pauseBeforeBackspace = 200; // Pause before correcting mistake
     let index = 0;
     let currentMistake = 0;
     let typingText = document.getElementById("typing-text");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index < originalText.length) {
             typingText.innerHTML += originalText.charAt(index);
             index++;
-
+            
             // Check if we hit a mistake position
             if (currentMistake < mistakes.length && index === mistakes[currentMistake].position + mistakes[currentMistake].wrong.length) {
                 setTimeout(erase, pauseBeforeBackspace); // Pause before correcting
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function retype() {
-        let mistake = mistakes[currentMistake];
-        let correct = mistake.correct;
+        let mistake = mistakes[currentMistake]; //index of current mistake
+        let correct = mistake.correct; //
         let correctIndex = 0;
 
         function typeCorrection() {
@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 correctIndex++;
                 setTimeout(typeCorrection, speed);
             } else {
+                index+=mistake.wrong.length;
                 currentMistake++;
                 type(); // Resume typing the sentence
             }
