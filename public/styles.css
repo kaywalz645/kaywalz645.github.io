@@ -71,7 +71,7 @@ header {
 .hamburger span {
   width: 30px;
   height: 3px;
-  background: white;
+  background: black;
   margin: 5px 0;
   transition: 0.3s;
 }
