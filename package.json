@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kaywalz645.github.io/public/",
   "dependencies": {
     "express": "^4.21.2"
   }
