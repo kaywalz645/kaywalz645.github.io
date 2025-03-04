@@ -67,33 +67,41 @@ document.addEventListener("DOMContentLoaded", function () {
     type(); // Start the typing effect
 });
 
-const form = document.querySelector(".contact-form");
-
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();  // Prevent form submission
+document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Prevent the default form submission
   
+    // Gather form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+  
+    // Create a data object to send to the backend
     const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value
+      name: name,
+      email: email,
+      message: message
     };
   
     try {
-      const response = await fetch("https://contact-form-backend-g87x.onrender.com", { 
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      // Send the form data to the backend (your server on Render or wherever it's hosted)
+      const response = await fetch('https://your-backend-url.com/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify(formData)
       });
   
-      const result = await response.json();
-      if (result.success) {
-        alert("Message sent successfully!");
-        form.reset();
+      if (response.ok) {
+        alert('Message sent successfully!');
+        // Optionally, clear the form after submission
+        document.getElementById('contact-form').reset();
       } else {
-        alert("Something went wrong.");
+        alert('There was an issue sending your message.');
       }
     } catch (error) {
-      console.error(error);
-      alert("Error sending message.");
+      console.error('Error:', error);
+      alert('There was an issue sending your message.');
     }
   });
+  
