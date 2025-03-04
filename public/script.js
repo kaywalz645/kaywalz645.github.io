@@ -78,7 +78,7 @@ form.addEventListener("submit", async (e) => {
   };
 
   try {
-    const response = await fetch("https://your-backend.onrender.com/contact", { 
+    const response = await fetch("https://contact-form-backend-g87x.onrender.com", { 
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
