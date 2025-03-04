@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     type(); // Start the typing effect
 });
+
 const form = document.querySelector(".contact-form");
 
 form.addEventListener("submit", async (e) => {
