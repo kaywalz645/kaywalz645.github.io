@@ -317,6 +317,9 @@ header {
     font-family: "Parkinsans", sans-serif;
     margin-bottom: 20px;
   }
+  .project h3:hover a:hover{
+    color: #f0a500;
+  }
   .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
