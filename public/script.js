@@ -70,30 +70,30 @@ document.addEventListener("DOMContentLoaded", function () {
 const form = document.querySelector(".contact-form");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  };
-
-  try {
-    const response = await fetch("https://contact-form-backend-g87x.onrender.com", { 
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
-    });
-
-    const result = await response.json();
-    if (result.success) {
-      alert("Message sent successfully!");
-      form.reset();
-    } else {
-      alert("Something went wrong.");
+    e.preventDefault();  // Prevent form submission
+  
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+  
+    try {
+      const response = await fetch("https://contact-form-backend-g87x.onrender.com", { 
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+  
+      const result = await response.json();
+      if (result.success) {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error sending message.");
     }
-  } catch (error) {
-    console.error(error);
-    alert("Error sending message.");
-  }
-});
+  });
