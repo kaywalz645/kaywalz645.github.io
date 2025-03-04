@@ -84,7 +84,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   
     try {
       // Send the form data to the backend (your server on Render or wherever it's hosted)
-      const response = await fetch('https://your-backend-url.com/contact', {
+      const response = await fetch('https://contact-form-backend-g87x.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -97,11 +97,11 @@ document.getElementById('contact-form').addEventListener('submit', async functio
         // Optionally, clear the form after submission
         document.getElementById('contact-form').reset();
       } else {
-        alert('There was an issue sending your message.');
+        alert('There was an issue sending your message-1.');
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('There was an issue sending your message.');
+      alert('There was an issue sending your message-2.');
     }
   });
   
