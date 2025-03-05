@@ -427,6 +427,14 @@ header {
     background: #555;
   }
 
+  .ps-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
+  }
+
   @media (max-width: 660px) {
     .contact-section{
       max-width: 90%;
