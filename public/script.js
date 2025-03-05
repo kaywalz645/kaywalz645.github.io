@@ -4,12 +4,12 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const originalText = "I'm a creative designer and seelopr who loves turning ideas into betuifully functional digittal experiences."; // Contains intentional typos
-    const correctedText = "I’m a creative designer and developer who loves turning ideas into beautifully functional digital experiences"; // Corrected version
+    const originalText = "I am currently a studing Computer Infomatrion Systems at the Unoversity of South Carolina with some interests in Statistics and Digital Meidia."; // Contains intentional typos
+    const correctedText = "I am currently a studing Computer Information Systems at the University of South Carolina with interests in Statistics and Digital Media."; // Corrected version
     const mistakes = [
-        { wrong: "seelopr", correct: "developer", position: 28 },
-        { wrong: "betuifully", correct: "beautifully", position: 65 },
-        { wrong: "digittal", correct: "digital", position: 87}
+        { wrong: "Infomatrion", correct: "Information", position: 34 },
+        { wrong: "Unoversity", correct: "University", position: 61 },
+        { wrong: "Meidia", correct: "Media", position: 136}
     ];
 
     const speed = 30; // Normal typing speed (ms)
