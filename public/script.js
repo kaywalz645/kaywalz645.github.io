@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const originalText = "I am currently a studying Computer Infomatrion Systems at the Unoversity of South Carolina with some interests in Statistics and Digital Meidia."; // Contains intentional typos
     const correctedText = "I am currently a studying Computer Information Systems at the University of South Carolina with interests in Statistics and Digital Media."; // Corrected version
     const mistakes = [
-        { wrong: "Infomatrion", correct: "Information", position: 34 },
-        { wrong: "Unoversity", correct: "University", position: 61 },
-        { wrong: "Meidia", correct: "Media", position: 136}
+        { wrong: "Infomatrion", correct: "Information", position: 35 },
+        { wrong: "Unoversity", correct: "University", position: 62},
+        { wrong: "Meidia", correct: "Media", position: 137}
     ];
 
     const speed = 30; // Normal typing speed (ms)
